@@ -1,4 +1,5 @@
-
+/* In this code I try to use a vector to hold some structs
+   with a bit of succes */ 
 
 #[derive(Debug, Clone)]
 struct Person{
@@ -42,6 +43,8 @@ impl Person {
     }
 }
 
+// This is a constructor function to isntatiate 
+// structs given the data
 fn build_person(name: String, age: u8) -> Person {
     Person {
         name,
